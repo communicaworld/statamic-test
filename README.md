@@ -1,4 +1,4 @@
-# Statamic Vagrant
+# Statamic + Vagrant
 
 ## Preparing the Environment
 
