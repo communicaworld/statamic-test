@@ -28,7 +28,8 @@ Thumbs.db
 # Development Tools
 node_modules
 .vagrant
+.env
 
 # Project Folders
-
+.www
 .test

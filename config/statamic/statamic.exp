@@ -1,0 +1,14 @@
+#!/usr/bin/env expect
+
+set timeout -1
+spawn php /var/www/please make:user
+sleep 1
+expect "Email*\?" {send "$env(STATAMIC_ADMIN_EMAIL)\r"}
+sleep 1
+expect "Name*\?" {send "Admin\r"}
+sleep 1
+expect "Password*\?:" {send "$::env(STATAMIC_ADMIN_PASS)\r"}
+sleep 1
+expect "Super*\?" {send "yes\r"}
+sleep 1
+expect eof
