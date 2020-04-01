@@ -22,7 +22,7 @@ You can start with an existing website or starter kit. Load the files for into t
 
 - **Run Vagrant Up**: Run `vagrant up` to provision the vagrant instance.
 
-- **.www**: A `dist` folder will be created during the provisioning if it does not already exist. This is where Statamic files can be altered. `dist/public` is your Apache DocumentRoot.
+- **Dist**: A `dist` folder will be created during the provisioning if it does not already exist. This is where Statamic files can be altered. `dist/public` is your Apache DocumentRoot.
 
 - **localhost:8001**: Navigate in your browser to `http://localhost:8001/` to view your Statamic website. You may log into your control panel at `http://localhost:8001/cp/auth/login` using the credentials specified in your `.env` or the existing users in your `dist/users` folder. If port 8001 was already occupied, Vagrant may have setup your site on another port.
 
