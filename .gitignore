@@ -27,9 +27,11 @@ Thumbs.db
 
 # Development Tools
 node_modules
+vendor
 .vagrant
 .env
 
 # Project Folders
-.www
-.test
+
+dist/*
+!dist/.gitkeep
