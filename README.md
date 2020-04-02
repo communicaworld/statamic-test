@@ -16,7 +16,7 @@
 
 ## Existing Sites & Starter Kits
 
-You can start with an existing website or starter kit. Load the files for into the `dist` folder. Ensure the .env.example file exists. The provisioning script will detect the starter kit and install Statamic and your other composer dependencies.
+You can start with an existing website or starter kit. Load your website or starter kit files into the `dist` folder. Ensure the .env.example file exists. The provisioning script will detect the starter kit and install Statamic along with your other composer dependencies.
 
 ## Vagrant Up
 

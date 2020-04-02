@@ -37,6 +37,7 @@ Vagrant.configure("2") do |config|
   # Add files for us to use in the shell script.
 
   config.vm.provision "file", source: "config/vagrant/.env", destination: ".env"
+  config.vm.provision "file", source: "config/php/php.ini", destination: "php.ini"
   config.vm.provision "file", source: "config/statamic/statamic.exp", destination: "statamic.exp"
   config.vm.provision "file", source: "config/apache/apache2.conf", destination: "apache2.conf"
   config.vm.provision "file", source: "config/apache/000-default.conf", destination: "000-default.conf"
@@ -80,6 +81,10 @@ Vagrant.configure("2") do |config|
 
     mv -f apache2.conf /etc/apache2/apache2.conf
     mv -f 000-default.conf /etc/apache2/sites-available/000-default.conf
+
+    # Add our PHP configuration
+
+    mv -f php.ini /etc/php/7.2/cli/php.ini
 
     # Remove the DocumentRoot only if Laravel is not detected. We'll be putting it back together later.
 
